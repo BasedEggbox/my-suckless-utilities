@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=dwm
-Comment=Dynamic Window Manager
-Exec=xinitrcsession-helper
-TryExec=xinitrcsession-helper
-Type=Application
