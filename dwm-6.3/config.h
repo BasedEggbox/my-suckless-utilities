@@ -22,7 +22,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = {"","","","","","","","",""};
+static const char *tags[] = {"","","","","","",""};
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -69,6 +69,7 @@ static const char *prtscrcmd[] = { "flameshot", "gui", NULL};
 static const char *firefox[] = {"firefox", NULL};
 static const char *steam[] = {"steam", NULL};
 static const char *thunar[] = {"thunar", NULL};
+# include "selfrestart.c"
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
@@ -111,6 +112,7 @@ static Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+	{ MODKEY|ShiftMask,		XK_r,	   self_restart,   {0} },
 };
 
 /* button definitions */
